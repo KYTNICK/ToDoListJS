@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #153677, #008080);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background-color: #fff;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+
+.todo-app h2 {
+  font-weight: 900;
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.row input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+}
+.row input:focus {
+  border: none;
+  outline: none;
+}
+
+.row button {
+  border: none;
+  outline: none;
+  padding: 15px 50px;
+  background-color: teal;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+
+  border-radius: 40px;
+}
+
+.todo-app .task-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 20px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.task-notdone {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background: url("images/unchecked.png") center / cover no-repeat;
+  padding: right 10px;
+}
+.todo-app .task-item .checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.task-done {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  padding: right 10px;
+  background: url("images/checked.png") center / cover no-repeat;
+}
+.task-text {
+  display: block;
+  margin-left: 10px;
+  word-wrap: break-word;
+  max-width: 90%;
+  padding-right: 40px;
+}
+
+.todo-app .task-item span {
+  position: absolute;
+  right: 0;
+
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+}
+.todo-app .task-item span:hover {
+  background: #eee;
+  border-radius: 50%;
+}
